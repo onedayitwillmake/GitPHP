@@ -77,11 +77,11 @@ td, th {
 ---------------------------------------------------------------------------- */
 
 .page_header {
-    background: #cfcfcf url(img/page_header.png) repeat-x 0 0;
+    background: #cfcfcf url(../img/page_header.png) repeat-x 0 0;
     height: 3.4em;
     line-height: 3.4em;
     position: relative;
-    padding: 0 27px;
+    padding: 0 2px;
     margin-bottom: 30px;
 }
 
@@ -113,7 +113,7 @@ td, th {
 .page_footer {
     height: 115px;
     line-height: 115px;
-    background: #4386ba url(img/page_footer.png) repeat-x 0 0;
+    background: #4386ba url(../img/page_footer.png) repeat-x 0 0;
     padding: 0 30px;
     margin-top: 15px;
 }
@@ -157,7 +157,6 @@ a.rss_logo:hover {
 .shortlog,
 .tree,
 .commit_search {
-    width: 960px;
     margin: 0 auto 15px auto;
     border: 1px solid #d8d8d8;
 }
@@ -184,7 +183,7 @@ a.rss_logo:hover {
 .shortlog tr.dark, .shortlog tr.light,
 .tree tr.dark, .tree tr.light,
 .commit_search tr.dark, .commit_search tr.light {
-    background: #efefef url(img/table_row.png) repeat-x 0 0;
+    background: #efefef url(../img/table_row.png) repeat-x 0 0;
     height: 2.5em;
     border-bottom: 1px solid #e1e1e1;
 }
@@ -209,7 +208,6 @@ th .header {
 .list_head,
 .page_path,
 .search {
-    width: 948px;
     background: #f0f0f0;
     color: #545454;
     border: 1px solid #d8d8d8;
@@ -218,14 +216,12 @@ th .header {
 }
 
 .title {
-    width: 950px;
     padding: 5px;
 }
 
 .projects_list,
 .heads,
 .tags {
-    width: 960px;
     background: #f0f0f0;
     color: #545454;
     border: 1px solid #d8d8d8;
@@ -234,7 +230,6 @@ th .header {
 }
 
 .header {
-    width: 948px;
     margin: 0 auto 15px auto;
     background: #eaf2f5;
     border: 1px solid #bedce7;
@@ -249,7 +244,6 @@ th .header {
 }
 
 .title_text {
-    width: 948px;
     background: #eaf2f5;
     border: 1px solid #bedce7;
     padding: 5px;
@@ -257,7 +251,6 @@ th .header {
 }
 
 .log_body {
-    width: 948px;
     background: #eaf2f5;
     border: 1px solid #bedce7;
     border-top: 0;
@@ -267,7 +260,6 @@ th .header {
 
 .page_body {
     line-height: 1.4em;
-    width: 948px;
     background: #f8f8ff;
     border: 1px solid #d8d8d8;
     padding: 5px;
@@ -275,7 +267,6 @@ th .header {
 }
 
 .diff_tree {
-    width: 960px;
     background: #f0f0f0;
     border: 1px solid #d8d8d8;
     padding: 5px;
@@ -283,7 +274,6 @@ th .header {
 }
 
 .author_date {
-    width: 948px;
     background: #f0f0f0;
     border: 1px solid #d8d8d8;
     padding: 5px;
@@ -397,19 +387,6 @@ td.error {
     color: red;
     background: yellow;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
