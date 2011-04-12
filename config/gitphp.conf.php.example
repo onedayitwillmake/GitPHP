@@ -11,10 +11,94 @@
  */
 
 /*
+ * stylesheet
+ * Path to page stylesheet
+ */
+$gitphp_conf['stylesheet'] = "gitphp.css";
+
+/*
  * projectroot
  * Full directory on server where projects are located
  */
-//$gitphp_conf['projectroot'] = '/pub/gitprojects/';
+$gitphp_conf['projectroot'] = "/git/";
+
+/*
+ * gitbin
+ * Path to git binary
+ * For example, /usr/bin/git on Linux
+ * or C:\\Program Files\\Git\\bin\\git.exe on Windows
+ * with msysgit.  You can also omit the full path and just
+ * use the executable name to search the user's $PATH.
+ * Note: Versions of PHP below 5.2 have buggy handling of spaces
+ * in paths.  Use the 8.3 version of the filename if you're
+ * having trouble, e.g. C:\\Progra~1\\Git\\bin\\git.exe
+ */
+$gitphp_conf['gitbin'] = "/usr/bin/git";
+
+/*
+ * diffbin
+ * Path to diff binary
+ * Same rules as gitbin
+ * Windows (msysgit): C:\\Progra~1\\Git\\bin\\diff.exe
+ */
+$gitphp_conf['diffbin'] = "/usr/bin/diff";
+
+/*
+ * gittmp
+ * Location for temporary files for diffs
+ * (don't forget trailing slash!)
+ */
+$gitphp_conf['gittmp'] = "/tmp/gitphp/";
+
+/*
+ * title
+ * The string that will be used as the page title
+ * The variable '$gitphp_appstring' will expand to
+ * the name (gitphp) and version
+ * The variable '$gitphp_version' will expand to the
+ * version number only
+ */
+$gitphp_conf['title'] = "$gitphp_appstring";
+$gitphp_conf['maintitle'] = 'Git Repositories';
+
+/*
+ * self
+ * This is the path to the script that will be inserted
+ * in urls.  If you leave this blank/commented the script
+ * will try to guess the correct URL, but you can override
+ * it here if it's not being guessed correctly.
+ *
+ * If only specifying the directory path (and omitting the
+ * index.php filename), make sure to include the trailing
+ * slash!
+ */
+//$gitphp_conf['self'] = "http://localhost/gitphp/";
+
+/*
+ * smarty_prefix
+ * This is the prefix where smarty is installed.
+ * (including trailing slash)
+ * If an absolute (starts with /) path is given,
+ * Smarty.class.php will be searched for in that directory.
+ * If a relative (doesn't start with /) path is given,
+ * that subdirectory inside the php include dirs will be
+ * searched.  So, for example, if you specify the path as
+ * "/usr/share/Smarty/" then the script will look for
+ * /usr/share/Smarty/Smarty.class.php.
+ * If you specify the path as "smarty/" then it will search
+ * the include directories in php.ini's include_path directive,
+ * so it would search in places like /usr/share/php and /usr/lib/php:
+ * /usr/share/php/smarty/Smarty.class.php,
+ * /usr/lib/php/smarty/Smarty.class.php, etc.
+ * Leave blank to just search in the root of the php include directories
+ * like /usr/share/php/Smarty.class.php, /usr/lib/php/Smarty.class.php, etc.
+ */
+$gitphp_conf['smarty_prefix'] = "smarty/";
+
+/*
+ * compressformat
+ * Indicates what kind of compression will be done on the
+ * snapshot archive.  Recognized settings are:
 
 /*
  * bareonly
@@ -42,6 +126,10 @@
  * writable by the server
  */
 //$gitphp_conf['cache'] = true;
+
+//$gitphp_conf['pushurl'] = "http://localhost/git/push.php/";
+
+$author_map = array();
 
 /*
  * objectcache

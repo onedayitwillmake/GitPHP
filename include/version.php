@@ -12,11 +12,11 @@
 /**
  * Defines the version
  */
-$gitphp_version = "0.2.3";
+$gitphp_version = "0.2.3 fork + glip";
 
 /**
  * Defines the app string (app name and version)
  */
-$gitphp_appstring = "gitphp $gitphp_version";
+$gitphp_appstring = "gitphp-glip $gitphp_version";
 
 ?>
