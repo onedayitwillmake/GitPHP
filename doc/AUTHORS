@@ -20,7 +20,6 @@ E: xvmv@mail.ru
 D: Changed to use glip instead of exec() calls
 
 N: Tanguy Pruvot
-E: tanguy.pruvot@gmail.com
 W: http://tanguy.tk
 D: github merge between xiphux 0.2.3 and glip versions
 

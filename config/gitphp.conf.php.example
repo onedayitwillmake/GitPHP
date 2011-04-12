@@ -12,9 +12,9 @@
 
 /*
  * stylesheet
- * Path to page stylesheet
+ * Name of skin (must be in /css folder)
  */
-$gitphp_conf['stylesheet'] = "gitphp.css";
+//$gitphp_conf['stylesheet'] = "gitweb.css";
 
 /*
  * projectroot
