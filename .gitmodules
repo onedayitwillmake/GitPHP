@@ -1,3 +1,4 @@
 [submodule "glip"]
 	path = glip
 	url = git://github.com/Upliner/glip.git
+;	url = git://github.com/patrikf/glip.git
