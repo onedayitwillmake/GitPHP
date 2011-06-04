@@ -451,7 +451,7 @@ class GeSHi {
      *  The style for the actual code
      * @var string
      */
-    var $code_style = 'font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;';
+    var $code_style = 'font: normal normal 10px Menlo, monospace; margin:0; padding:0; background: #FFFFFF; vertical-align:top;';
 
     /**
      * The overall class for this code block
@@ -487,7 +487,7 @@ class GeSHi {
      * Flag for how line numbers are displayed
      * @var boolean
      */
-    var $line_numbers = GESHI_NO_LINE_NUMBERS;
+    var $line_numbers = GESHI_FANCY_LINE_NUMBERS;
 
     /**
      * Flag to decide if multi line spans are allowed. Set it to false to make sure
@@ -4583,7 +4583,7 @@ class GeSHi {
         $cur_len = 0;
         for ($i = 0, $i_max = count($list); $i < $i_max; ++$i) {
             if ($cur_len > GESHI_MAX_PCRE_LENGTH) {
-                // seems like the length of this pcre is growing exorbitantly
+                // seems like the length of this pcre is growing exorbitancently
                 $regexp_list[++$list_key] = $this->_optimize_regexp_list_tokens_to_string($tokens);
                 $num_subpatterns = substr_count($regexp_list[$list_key], '(?:');
                 $tokens = array();

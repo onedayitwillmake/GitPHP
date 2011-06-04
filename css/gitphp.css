@@ -164,6 +164,7 @@ table.treeTable img.treeSpinner {
 }
 
 #blobData {
+	margin: 0 auto;
 	font-family: monospace;
 }
 
